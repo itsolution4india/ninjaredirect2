@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Investment Strategies for 2025</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+      min-height: 100vh;
+      padding: 40px 5%;
+      gap: 30px;
+    }
+
+    .content-section {
+      flex: 1 1 600px;
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .image-section {
+      flex: 1 1 400px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      min-height: 500px;
+    }
+
+    .blog-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .blog-header span {
+      font-size: 2rem;
+    }
+
+    .blog-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #222;
+    }
+
+    .blog-date {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .blog-content {
+      line-height: 1.8;
+      font-size: 1rem;
+      text-align: justify;
+    }
+
+    .blog-content h2 {
+      margin-top: 35px;
+      color: #004aad;
+      font-size: 1.4rem;
+    }
+
+    .blog-content p {
+      margin: 15px 0;
+    }
+
+    .blog-image {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .blog-image img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    .blog-image p {
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 8px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      color: #004aad;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .back-link:hover {
+      color: #001d4d;
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .container {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .image-section {
+        order: -1;
+        min-height: 300px;
+      }
+
+      .content-section {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+ <nav>
+    <div class="nav-container">
+      <a href="/" class="logo">FinanceHub</a>
+      <ul class="nav-links">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'blogs' %}">Blogs</a></li>
+        <li><a href="{% url 'contacts' %}">Contact</a></li>
+      </ul>
+    </div>
+  </nav><br>
+<div class="container blog-page">
+  <!-- Top Banner Image -->
+  <div class="blog-banner">
+    <img src="{% static 'images/7.png' %}" alt="Smart Financial Goals 2026" width="700">
+  </div>
+
+  <!-- Blog Header -->
+  <div class="blog-header text-center">
+    <h1 class="blog-title">Smart Financial Goals for 2026</h1>
+    <p class="blog-date">October 5, 2025</p>
+  </div>
+
+  <!-- Blog Content -->
+  <div class="blog-content">
+    <p>As we approach 2026, setting smart and achievable financial goals is more crucial than ever. With global economies shifting, inflation stabilizing, and digital finance tools becoming more accessible, individuals now have greater control over their money than at any point in history. But to make meaningful progress, your goals must be more than vague resolutions—they should be structured, measurable, and rooted in a clear financial vision.</p>
+
+    <h2>1. Why Setting Financial Goals Matters</h2>
+    <p>Without a clear plan, it’s easy to drift financially—earning and spending without direction. Setting specific goals gives your money purpose. Whether you’re saving for a home, building an emergency fund, paying off debt, or preparing for early retirement, defined objectives help you make smarter, more intentional decisions every day.</p>
+
+    <p>When you set financial goals, you shift from reacting to your financial situation to proactively designing it. It’s not just about saving money—it’s about aligning your finances with your lifestyle, priorities, and long-term aspirations.</p>
+
+    <h2>2. The SMART Framework</h2>
+    <p>The SMART method—Specific, Measurable, Achievable, Relevant, and Time-bound—is the foundation of goal setting. Here’s how to apply it to your 2026 financial plan:</p>
+    <ul>
+      <li><strong>Specific:</strong> Clearly define what you want to achieve. Instead of saying “I want to save more,” say “I want to save ₹10,000 every month.”</li>
+      <li><strong>Measurable:</strong> Track your progress with milestones—such as reaching 25%, 50%, and 100% of your goal.</li>
+      <li><strong>Achievable:</strong> Set realistic targets based on your income and expenses. Overly ambitious goals often lead to frustration and quitting.</li>
+      <li><strong>Relevant:</strong> Make sure the goal aligns with your overall financial vision—whether it’s security, freedom, or growth.</li>
+      <li><strong>Time-bound:</strong> Assign a clear deadline, like “By December 2026, I’ll have saved ₹1,20,000.”</li>
+    </ul>
+
+    <!-- Mid-Blog Image -->
+    <div class="blog-image-center">
+      <img src="{% static 'images/financial-goals-chart.png' %}" alt="Financial Planning 2026">
+      <p class="img-caption">Setting clear, measurable goals helps you track and celebrate financial milestones effectively.</p>
+    </div>
+
+    <h2>3. Build an Emergency Fund First</h2>
+    <p>Before diving into investments or luxury purchases, build a financial safety net. Aim to save at least 3–6 months’ worth of living expenses in a separate, easily accessible account. This protects you from unexpected events like job loss or medical emergencies and keeps your long-term plans on track.</p>
+
+    <h2>4. Pay Down High-Interest Debt</h2>
+    <p>In 2026, managing debt efficiently will be more important than ever as interest rates continue to fluctuate. Focus on clearing high-interest debts such as credit card balances and personal loans first. Use strategies like the “debt snowball” (starting small) or “debt avalanche” (targeting high-interest first) to stay motivated and efficient.</p>
+
+    <h2>5. Automate Savings and Investments</h2>
+    <p>Consistency beats intensity when it comes to money. Automate your savings through SIPs (Systematic Investment Plans) or recurring deposits. Automating removes emotion and ensures you’re always paying yourself first—before expenses or discretionary spending eat away at your income.</p>
+
+    <h2>6. Diversify Your Income Sources</h2>
+    <p>Financial independence is easier when you don’t rely on a single income stream. 2026 presents many opportunities for diversification—side hustles, freelancing, dividend-paying stocks, or passive income from digital assets. The goal isn’t to work more, but to make your money work smarter.</p>
+
+    <h2>7. Revisit and Adjust Quarterly</h2>
+    <p>Your financial goals aren’t set in stone. Circumstances change—salaries grow, priorities shift, and economies fluctuate. Review your progress every quarter to stay flexible. Adjust savings percentages, rebalance your investments, and realign your goals to match your evolving life stage.</p>
+
+    <h2>8. Think Long-Term: Retirement and Beyond</h2>
+    <p>It’s never too early to plan for retirement. Contribute regularly to a provident fund, NPS (National Pension System), or long-term equity funds. Compounding turns time into your biggest ally—the earlier you start, the greater your wealth grows without needing massive contributions later.</p>
+
+    <h2>9. Financial Wellness Beyond Numbers</h2>
+    <p>Smart financial goals aren’t just about growing wealth—they’re about peace of mind. Strive for a balanced approach that includes budgeting for leisure, experiences, and self-care. Financial health is part of overall well-being, not just net worth.</p>
+
+    <h2>10. Conclusion: Make 2026 the Year of Financial Clarity</h2>
+    <p>2026 is your opportunity to turn financial awareness into lasting action. By setting SMART goals, automating savings, managing debt wisely, and investing intentionally, you can transform your financial future. Remember, the path to financial freedom isn’t about perfection—it’s about progress, persistence, and purpose.</p>
+
+    <br><br>
+    <a href="{% url 'blogs' %}" class="back-link">← Back to Blogs</a>
+  </div>
+</div>
+
+
+
+</body>
+</html>

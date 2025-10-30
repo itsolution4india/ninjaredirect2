@@ -19,3 +19,16 @@ def estateplanning(request):
     return render(request,"Estateplanning.html")
 def estateplanning_main(request):
     return render(request,"Estateplanning_main.html")
+
+def smartfinancial(request):
+    return render(request,'SmartFinancial.html')
+
+
+def smartfinance_main(request):
+    return render(request,'SmartFinance_main.html')
+
+def funding(request):
+    return render(request,'Funding.html')
+
+def funding_main(request):
+    return render(request,'Funding_main.html')
