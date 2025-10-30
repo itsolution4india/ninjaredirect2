@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanceHub - About Us</title>
+ <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="logo">FinanceHub</a>
+            <ul class="nav-links">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'blogs' %}">Blogs</a></li>
+                <li><a href="{% url 'contacts' %}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>About FinanceHub</h1>
+        <p>Your Trusted Partner in Financial Success</p>
+    </section>
+
+    <!-- About Content -->
+    <section class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Who We Are</h2>
+                <p>Founded in 2010, FinanceHub has been at the forefront of financial advisory and consulting services. We are a team of dedicated professionals committed to helping individuals and businesses achieve their financial aspirations.</p>
+                <p>Our approach combines deep industry expertise with personalized attention to each client's unique circumstances. We believe that financial success is not just about numbers – it's about understanding your dreams, concerns, and life goals.</p>
+                <p>With over 15 years of experience and a proven track record, we have helped thousands of clients navigate complex financial landscapes, from investment planning to corporate restructuring. Our client-first philosophy ensures that every recommendation we make is tailored to your specific needs.</p>
+                <p>We pride ourselves on transparency, integrity, and long-term relationships. When you work with FinanceHub, you're not just getting a financial advisor – you're gaining a trusted partner for life.</p>
+            </div>
+            <div class="about-image">
+                🏢
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="mv-grid">
+                <div class="mv-card">
+                    <h3>🎯 Our Mission</h3>
+                    <p>To empower individuals and businesses with expert financial guidance, innovative solutions, and unwavering support to achieve their financial goals and secure their future.</p>
+                </div>
+                <div class="mv-card">
+                    <h3>🔭 Our Vision</h3>
+                    <p>To be the most trusted and respected financial advisory firm, recognized for our integrity, expertise, and commitment to transforming lives through sound financial planning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Core Values</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Integrity</h3>
+                    <p>We maintain the highest ethical standards and transparency in all our dealings, ensuring complete trust and confidence in our services.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3>Client-First</h3>
+                    <p>Your success is our success. We prioritize your financial wellbeing above all else and work tirelessly to exceed your expectations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💎</div>
+                    <h3>Excellence</h3>
+                    <p>We strive for excellence in every service we deliver, continuously improving our expertise and staying ahead of industry trends.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3>Confidentiality</h3>
+                    <p>We treat your financial information with the utmost discretion and implement robust security measures to protect your privacy.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌟</div>
+                    <h3>Innovation</h3>
+                    <p>We embrace cutting-edge financial tools and strategies to provide you with the most effective solutions in a rapidly changing world.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📚</div>
+                    <h3>Education</h3>
+                    <p>We believe in empowering our clients through education, helping you make informed decisions about your financial future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose FinanceHub?</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <h4>✓ Experienced Team</h4>
+                    <p>Our team of certified financial planners brings decades of combined experience across various financial disciplines.</p>
+                </div>
+                <div class="why-item">
+                    <h4>✓ Personalized Solutions</h4>
+                    <p>No two clients are alike. We create customized strategies that align perfectly with your unique goals and circumstances.</p>
+                </div>
+                <div class="why-item">
+                    <h4>✓ Comprehensive Services</h4>
+                    <p>From investment planning to tax consulting, we offer a full suite of financial services under one roof.</p>
+                </div>
+                <div class="why-item">
+                    <h4>✓ Proven Track Record</h4>
+                    <p>Our success is measured by our clients' success. We've helped thousands achieve their financial dreams.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 FinanceHub. All rights reserved. | Empowering Financial Success</p>
+    </footer>
+</body>
+</html>

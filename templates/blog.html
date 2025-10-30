@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinanceHub - Blogs</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <style>
+    /* --- Added clean image styles --- */
+    .blog-image {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #f4f4f4;
+    }
+    .blog-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .blog-card:hover .blog-image img {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="logo">FinanceHub</a>
+      <ul class="nav-links">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'blogs' %}">Blogs</a></li>
+        <li><a href="{% url 'contacts' %}">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <h1>Latest Insights & Articles</h1>
+    <p>Stay informed with expert financial advice and market insights</p>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="container">
+    <div class="blog-grid">
+
+      <div class="blog-card">
+        <div class="blog-image">
+          <img src="{% static 'images/8.png' %}" alt="Estate Planning">
+        </div>
+        <div class="blog-content">
+          <p class="blog-date">October 10, 2025</p>
+          <h3>Estate Planning: Securing Your Legacy</h3>
+          <p>Essential steps to protect your assets and ensure your wishes are carried out for future generations. From wills and trusts to power of attorney, understand the key components of a comprehensive estate plan.</p>
+          <a href="{% url 'estateplanning' %}" class="read-more" >Read More →</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-image">
+          <img src="{% static 'images/7.png' %}" alt="Financial Goals">
+        </div>
+        <div class="blog-content">
+          <p class="blog-date">October 5, 2025</p>
+          <h3>Smart Financial Goals for 2026</h3>
+          <p>How to set and achieve realistic financial objectives in the coming year with practical planning tips. Learn the SMART framework for goal-setting and how to track your progress effectively.</p>
+          <a href="#" class="read-more" >Read More →</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-image">
+          <img src="{% static 'images/6.png' %}" alt="Education Funding">
+        </div>
+        <div class="blog-content">
+          <p class="blog-date">September 30, 2025</p>
+          <h3>Funding Your Child's Education: Best Strategies</h3>
+          <p>Compare different education savings plans and investment options to secure your child's academic future. We analyze 529 plans, Coverdell ESAs, and other tax-advantaged savings vehicles.</p>
+          <a href="#" class="read-more" >Read More →</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-image">
+          <img src="{% static 'images/5.png' %}" alt="Market Strategies">
+        </div>
+        <div class="blog-content">
+          <p class="blog-date">October 25, 2025</p>
+          <h3>5 Investment Strategies for Volatile Markets</h3>
+          <p>Learn how to protect and grow your portfolio during uncertain economic times with these proven strategies. Discover the importance of diversification, dollar-cost averaging, and maintaining a long-term perspective when markets fluctuate.</p>
+          <a href="#" class="read-more" >Read More →</a>
+        </div>
+      </div>
+
+     
+
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Get the latest financial insights delivered directly to your inbox</p>
+      <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit" class="cta-button">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 FinanceHub. All rights reserved. | Empowering Financial Success</p>
+  </footer>
+
+  <!-- Scripts -->
+
+</body>
+</html>

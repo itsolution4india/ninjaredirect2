@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanceHub - Home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="logo">FinanceHub</a>
+            <ul class="nav-links">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'blogs' %}">Blogs</a></li>
+                <li><a href="{% url 'contacts' %}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Expert Financial Advisory Services</h1>
+        <p>Empowering your financial future with strategic insights and personalized solutions</p>
+        <a href="contact.html" class="cta-button">Get Started</a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Investment Planning</h3>
+                    <p>Develop customized investment strategies aligned with your financial goals and risk tolerance. We help you build a diversified portfolio for long-term wealth creation.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Corporate Finance</h3>
+                    <p>Strategic financial consulting for businesses including capital structure optimization, mergers & acquisitions, and financial restructuring solutions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Retirement Planning</h3>
+                    <p>Secure your future with comprehensive retirement planning. We help you create sustainable income streams for a comfortable retirement lifestyle.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Wealth Management</h3>
+                    <p>Holistic wealth management services including tax optimization, estate planning, and multi-generational wealth preservation strategies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Risk Management</h3>
+                    <p>Identify, assess, and mitigate financial risks with comprehensive insurance planning and asset protection strategies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💡</div>
+                    <h3>Tax Consulting</h3>
+                    <p>Expert tax planning and compliance services to minimize tax liabilities while ensuring full regulatory compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>15+</h3>
+                <p>Years of Experience</p>
+            </div>
+            <div class="stat-item">
+                <h3>2,500+</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-item">
+                <h3>$500M+</h3>
+                <p>Assets Under Management</p>
+            </div>
+            <div class="stat-item">
+                <h3>98%</h3>
+                <p>Client Satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 FinanceHub. All rights reserved. | Empowering Financial Success</p>
+    </footer>
+</body>
+</html>
